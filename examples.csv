@@ -1,6 +1,6 @@
-Model Type,Test Case,Sample Text,Expected Result,Notes
-Profanity Detection,Explicit Profanity,"Hi there, this is Mike from XYZ Collections. How the hell are you? I'm doing well, thank you for asking. How can I help you today? I’m calling about your past due balance. Can you just confirm your name? Of course, it's John Smith. Great! You've got an outstanding balance of $500. When are you gonna pay this shit off? I understand the seriousness. I’m currently assessing my finances. Assessing your finances? Whatever! Just get your act together and pay us! I appreciate your concern, but I need some time to sort this out. Time? You think we have time to waste? Get real! This is unacceptable! I assure you, I'm doing my best to resolve this issue. Your best isn’t good enough! Do you think I care about your excuses? I would just like to find a solution that works for both of us. Solution? You need to get your head out of your ass and just pay! Thank you for your time. I will reach out once I have a plan. Yeah, whatever. Just don't take too long, dumbass.",Profanity Detected,High confidence
-Profanity Detection,Mild Profanity,"Hello, is this Maria? Yes, this is Maria. Hi Maria, this is John calling from XYZ Collections. How are you today? I'm doing alright, thank you. I'm glad to hear that! I'm reaching out to discuss your account with ABC Bank. Can I get your account number? I don't have it handy right now. No problem! I can look it up with your name. You've got an outstanding balance of $250. Would you like to discuss payment options? I wasn’t aware of that amount. Can you give me more details? Sure! The balance is from a missed payment last month. Do you have a plan to settle this soon? I need some time to think about it. That's completely understandable. Just remember, the sooner you settle, the better for your credit report. Okay, I'll review my finances and get back to you. Thank you, Maria. I appreciate your attention to this matter. Have a great day! You too, goodbye!",Profanity Detected,Medium confidence
+Model Type,Test Case,Sample Text,Expected Result
+Profanity Detection,Explicit Profanity,"Hi there, this is Mike from XYZ Collections. How the hell are you? I'm doing well, thank you for asking. How can I help you today? I’m calling about your past due balance. Can you just confirm your name? Of course, it's John Smith. Great! You've got an outstanding balance of $500. When are you gonna pay this shit off? I understand the seriousness. I’m currently assessing my finances. Assessing your finances? Whatever! Just get your act together and pay us! I appreciate your concern, but I need some time to sort this out. Time? You think we have time to waste? Get real! This is unacceptable! I assure you, I'm doing my best to resolve this issue. Your best isn’t good enough! Do you think I care about your excuses? I would just like to find a solution that works for both of us. Solution? You need to get your head out of your ass and just pay! Thank you for your time. I will reach out once I have a plan. Yeah, whatever. Just don't take too long, dumbass.",Profanity Detected
+Profanity Detection,Mild Profanity,"Hello, is this Maria? Yes, this is Maria. Hi Maria, this is John calling from XYZ Collections. How are you today? I'm doing alright, thank you. I'm glad to hear that! I'm reaching out to discuss your account with ABC Bank. Can I get your account number? I don't have it handy right now. No problem! I can look it up with your name. You've got an outstanding balance of $250. Would you like to discuss payment options? I wasn’t aware of that amount. Can you give me more details? Sure! The balance is from a missed payment last month. Do you have a plan to settle this soon? I need some time to think about it. That's completely understandable. Just remember, the sooner you settle, the better for your credit report. Okay, I'll review my finances and get back to you. Thank you, Maria. I appreciate your attention to this matter. Have a great day! You too, goodbye!",Profanity Detected
 Profanity Detection,Clean Text,"Hello, this is Sarah from ABC Collections. How are you today?  
 Hi Sarah, I’m doing fine. What’s going on?  
 I’m contacting you about your account with Quick Loan Co. Can you verify your identity for security?  
@@ -14,10 +14,10 @@ That’s doable. What’s next?
 I’ll email you the agreement. Just sign and return it.  
 Got it. Thanks for the help.  
 No problem, Jamie. Call if you have any questions.  
-Thanks, Sarah!",No Profanity,
-Profanity Detection,Slang/Misspellings,"ou're a total $#!thead, who the hell do you think you are? I do not want to talk to you.",Profanity Detected,
-Profanity Detection,Professional Context,"The customer expressed strong dissatisfaction",No Profanity,
-Profanity Detection,Mixed Case,"This service is bullshit and go to hell! I will esclate the situation to you manager. You will see the consequences.",Profanity Detected,
+Thanks, Sarah!",No Profanity
+Profanity Detection,Slang/Misspellings,"ou're a total $#!thead, who the hell do you think you are? I do not want to talk to you.",Profanity Detected
+Profanity Detection,Professional Context,The customer expressed strong dissatisfaction,No Profanity
+Profanity Detection,Mixed Case,This service is bullshit and go to hell! I will esclate the situation to you manager. You will see the consequences.,Profanity Detected
 Privacy Compliance,Credit Card Leak,"Hello, this is Sarah from XYZ Collections. Am I speaking with Mark?
 Yes, this is Mark. What can I help you with?
 I'm calling regarding your outstanding balance with ABC Credit. Can I confirm your account details?
@@ -32,7 +32,7 @@ Thank you, Mark. That matches our records. Let’s proceed with collecting your 
 Okay, my card number is 4111 1111 1111 1111.
 Thank you for that. I will process this payment for you now.
 Thanks for your help!
-You're welcome! You're all set. Have a great day!",Sensitive Info Shared,
+You're welcome! You're all set. Have a great day!",Sensitive Info Shared
 Privacy Compliance,Not Verified,"Hi, this is Mike from XYZ Collections. How the hell are you?
 I’m doing well, thank you for asking. How can I help you today?
 I’m calling about your overdue balance. Can you just confirm your name?
@@ -47,7 +47,7 @@ Your best isn’t good enough! Do you think I care about your excuses?
 I would just like to find a solution that works for both of us.
 Solution? You need to get your head out of your ass and just pay!
 Thank you for your time. I will reach out once I have a plan.
-Yeah, whatever. Just don’t take too long, dumbass.",Sensitive Info Shared,
+Yeah, whatever. Just don’t take too long, dumbass.",Sensitive Info Shared
 Privacy Compliance,DOB Verification,"Hi, this is Mike with XYZ Collections. I’m calling about your unpaid balance. How are you doing today?
 I’m doing well, thank you. How can I help you?
 Before we get into that, can you confirm your birth date for me?
@@ -62,23 +62,19 @@ Time? You think you can just sit on your ass and not pay your debts? Get real!
 I assure you that I’m taking this seriously and will communicate my plan shortly.
 You better do it fast, or I’m going to escalate this, you got that?
 I understand. Thank you for your call, Mike.
-Whatever, just make sure you don’t screw this up again",Sensitive Info Shared,
+Whatever, just make sure you don’t screw this up again",Sensitive Info Shared
 Privacy Compliance,Safe Address,"Hi there, this is Dave from XYZ Collections. How's it going?
 I'm doing well, thank you. How can I help you?
 I'm calling about your overdue balance with Universal Credit. First, can you verify your address?
 Sure, it's App 15, Main Street, New York, 199.
 Alright, that's fine. Now, let me check your account...
-Oh great, you've got a balance of two thousand dollars. What the hell are you going to do about it?",No Issue,
+Oh great, you've got a balance of two thousand dollars. What the hell are you going to do about it?",No Issue
 Privacy Compliance,Masked Data,"Hello, is this Sarah Johnson?
 Yes, this is Sarah. Who's calling?
 Hi Sarah, this is Mark from XYZ Collections. I hope you’re doing well today.
 I'm fine, thanks. What is this about?
 I'm calling regarding your outstanding balance on your account with XYZ Bank. Can you confirm your account number so I can assist you?
 I don't have that information right now. Can you tell me the balance?
-Sure! Your current balance is pretty high. When are you planning to pay it back?",Issue,
-,,"",,
-,,"",,""
-,,"",,
-,,"",,
-Edge Cases,Long Text,"Hello, is this Maria? Yes, this is Maria. Hi Maria, this is John calling from XYZ Collections. How are you today? I'm doing alright, thank you. I'm glad to hear that! I'm reaching out to discuss your account with ABC Bank. Can I get your account number? I don't have it handy right now. No problem! I can look it up with your name. You've got an outstanding balance of $250. Would you like to discuss payment options? I wasn’t aware of that amount. Can you give me more details? Sure! The balance is from a missed payment last month. Do you have a plan to settle this soon? I need some time to think about it. That's completely understandable. Just remember, the sooner you settle, the better for your credit report. Okay, I'll review my finances and get back to you. Thank you, Maria. I appreciate your attention to this matter. Have a great day! You too, goodbye!",No Issue,""
-Real-World Example,Combined Violation,"Hello, is this Mr. Johnson? This is Sarah calling from XYZ Collections. Yes, this is Mr. Johnson speaking. How can I help you? I'm calling today regarding an outstanding balance on your account, fuck when do you plan to pay me back you motherfucker and leech sort of human being.. Can I take a moment of your time to discuss this? Sure, I have a moment. What is the balance? Thank you. You currently have a balance of $300 due. Pay it back, either way I will hunt you down and recover my money from you shithead looser.",Profanity Detected; Sensitive Info Shared,"Combined test case"
+Sure! Your current balance is pretty high. When are you planning to pay it back?",No Issue
+Edge Cases,Long Text,"Hello, is this Maria? Yes, this is Maria. Hi Maria, this is John calling from XYZ Collections. How are you today? I'm doing alright, thank you. I'm glad to hear that! I'm reaching out to discuss your account with ABC Bank. Can I get your account number? I don't have it handy right now. No problem! I can look it up with your name. You've got an outstanding balance of $250. Would you like to discuss payment options? I wasn’t aware of that amount. Can you give me more details? Sure! The balance is from a missed payment last month. Do you have a plan to settle this soon? I need some time to think about it. That's completely understandable. Just remember, the sooner you settle, the better for your credit report. Okay, I'll review my finances and get back to you. Thank you, Maria. I appreciate your attention to this matter. Have a great day! You too, goodbye!",
+Real-World Example,Combined Violation,"Hello, is this Mr. Johnson? This is Sarah calling from XYZ Collections. Yes, this is Mr. Johnson speaking. How can I help you? I'm calling today regarding an outstanding balance on your account, fuck when do you plan to pay me back you motherfucker and leech sort of human being.. Can I take a moment of your time to discuss this? Sure, I have a moment. What is the balance? Thank you. You currently have a balance of $300 due. Pay it back, either way I will hunt you down and recover my money from you shithead looser.",Profanity Detected; Sensitive Info Shared
