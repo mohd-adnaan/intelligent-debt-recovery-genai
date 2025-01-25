@@ -1,0 +1,18 @@
+Model Type,Test Case,Sample Text,Expected Result,Notes
+Profanity Detection,Explicit Profanity,"This is fucking ridiculous!",Profanity Detected,High confidence
+Profanity Detection,Mild Profanity,"What the hell are you doing?",Profanity Detected,Medium confidence
+Profanity Detection,Clean Text,"Please submit your payment by Friday",No Profanity,
+Profanity Detection,Slang/Misspellings,"You're a total $#!thead",Profanity Detected,
+Profanity Detection,Professional Context,"The customer expressed strong dissatisfaction",No Profanity,
+Profanity Detection,Mixed Case,"This service is BULLSHIT!",Profanity Detected,
+Privacy Compliance,Credit Card Leak,"My card is 4111-1111-1111-1111 exp 12/25",Sensitive Info Shared,
+Privacy Compliance,SSN Mention,"Social security number: 123-45-6789",Sensitive Info Shared,
+Privacy Compliance,DOB Verification,"Date of birth: April 15 1990",Sensitive Info Shared,
+Privacy Compliance,Safe Address,"I live in Springfield",No Issue,
+Privacy Compliance,Masked Data,"Last 4 digits: ****-****-****-1111",No Issue,
+Privacy Compliance,Partial Info,"The account starts with 4111",Flagged as Risky,
+Edge Cases,Empty Input,"",No Profanity,"Applies to both models"
+Edge Cases,Special Characters,"@$$h0l3",Profanity Detected,
+Edge Cases,CVV Leak,"CVV: 123",Sensitive Info Shared,
+Edge Cases,Long Text,"Lorem ipsum dolor sit amet...",No Issue,"500+ words with no triggers"
+Real-World Example,Combined Violation,"Just take the damn payment from my Visa: 4222-1234-5678-9012, exp 08/28, CVV 123. I don't care about security!",Profanity Detected; Sensitive Info Shared,"Combined test case"

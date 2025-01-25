@@ -9,7 +9,7 @@ import pickle
 model = load_model('src/ml_models/privacy_compliance_detection/privacy_compliance_lstm_model.keras')
 
 # Load the tokenizer (assuming it was saved during training)
-with open('src/ml_models/privacy_compliance_detection/tokenizer.pkl', 'wb') as f:
+with open('src/ml_models/privacy_compliance_detection/tokenizer.pkl', 'rb') as f:
     tokenizer = pickle.load(f)
 
 # Preprocessing function
