@@ -184,6 +184,6 @@ if __name__ == "__main__":
     compliance_results_df = process_compliance_analysis(data_dir)
 
     # Save results to a CSV file
-    output_file = "privacy_compliance_detection/ragex/compliance_analysis_results.csv"
+    output_file = "src/pattern_matching/privacy_compliance_detection/compliance_analysis_results.csv"
     compliance_results_df.to_csv(output_file, index=False)
     print(f"Compliance analysis results saved to {output_file}")

@@ -9,3 +9,10 @@ streamlit
 scikeras
 transformers
 pyyaml
+datasets 
+torch
+bitsandbytes
+textblob==0.15.3
+scipy
+pydot 
+graphviz
