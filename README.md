@@ -26,6 +26,9 @@ Intelligent Debt Recovery using GenAI to optimize payment maximization for lende
 - **Project GIF**:
   ![Project Demo](./project/project.gif)
 
+- **Project Comparative Analysis Requirements**:
+[Download the detailed project overview here](./project/Comparative_Analysis_Requirements.pdf)
+
 - **Project Description**:
   [Download the detailed project overview here](./project/project_description.pdf)
 
